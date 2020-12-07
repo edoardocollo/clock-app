@@ -25,7 +25,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 700px;
   text-align: center;
   background-color: black;
 }
@@ -74,6 +73,7 @@ input {
   color: black;
   text-decoration: none;
 }
-#code {
-  display: flex;
+
+pre{
+    white-space:pre-wrap;
 }
