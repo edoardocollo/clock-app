@@ -39,7 +39,7 @@ button {
   border-radius: 5px;
   padding: 5px 10px;
 }
-#countdown_wrapper {
+#sveglia_wrapper, #countdown_wrapper {
   display: flex;
   align-items: flex-end;
 }
@@ -55,6 +55,6 @@ input {
   display: flex;
   flex-direction: column;
 }
-#start_countdown {
+#start_sveglia,#start_countdown {
   height: 30px;
 }

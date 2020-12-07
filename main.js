@@ -9,7 +9,7 @@ setInterval(function () {
   var oraAttuale = new Date();
   var secondi = oraAttuale.getSeconds();
   var minuti = oraAttuale.getMinutes();
-  var ore = oraAttuale.getMonth();
+  var ore = oraAttuale.getHours();
   displayOra.text(`${ore}:${minuti}:${secondi}`)
 
 }, 1000);
@@ -36,9 +36,37 @@ function sveglia(setOre,setMinuti,setSecondi) {
     }
 }
 
-setInterval(
-sveglia
-, 1000,11,36,10 );
+var startSveglia = $('#start_sveglia');
+startSveglia.click(function(){
+  var ora = Number($('.input_sveglia1').val());
+  var minuti = Number($('.input_sveglia2').val());
+  var secondi = Number($('.input_sveglia3').val());
+  var oraSveglia = $('#ora_sveglia');
+  oraSveglia.text(`La sveglia è stata settata alle ore:${ora}:${minuti}:${secondi}`)
+  console.log(ora, minuti, secondi);
+
+  setInterval(sveglia, 1000, ora, minuti, secondi);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // CRONOMETRO
 /////////////////////
@@ -81,7 +109,7 @@ var countdown = $('#countdown');
 countdownBtn.click(function(){
   // interrompo il ciclo precedente per fermare countdown precedente se esiste
   countdownBtn.click(function(){
-    
+
     clearInterval(variabileCountdown);
   });
   // azzero contenuto countdown se presente
