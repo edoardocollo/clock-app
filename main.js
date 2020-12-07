@@ -71,3 +71,42 @@ cronometroBtn.click(function(){
 });
 
 });
+
+
+// COUNTDOWN
+//////////////////
+
+var countdownBtn = $('#start_countdown');
+var countdown = $('#countdown');
+countdownBtn.click(function(){
+  // interrompo il ciclo precedente per fermare countdown precedente se esiste
+  countdownBtn.click(function(){
+    
+    clearInterval(variabileCountdown);
+  });
+  // azzero contenuto countdown se presente
+  countdown.text('');
+  var ore = Number($('.input1').val());
+  var minuti = Number($('.input2').val());
+  var secondi = Number($('.input3').val());
+  $('.input1').val(0);
+  $('.input2').val(0);
+  $('.input3').val(0);
+  console.log(ore, minuti , secondi);
+  var variabileCountdown = setInterval(function () {
+    countdown.text(`${ore}:${minuti}:${secondi}`);
+    if (ore == 0 && minuti == 0 && secondi == 0) {
+      countdown.text(`${ore}:${minuti}:${secondi}`);
+      clearInterval(variabileCountdown);
+    }
+    if (secondi == 0) {
+      minuti--;
+      secondi = 60;
+    }
+    if (minuti == 0 && secondi == 0) {
+      ore--;
+      minuti = 60;
+    }
+    secondi--;
+  }, 1000);
+});

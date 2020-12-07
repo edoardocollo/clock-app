@@ -23,6 +23,12 @@ body {
   text-align: center;
   background-color: black;
 }
+h2 {
+  padding: 20px 0;
+}
+p{
+  padding: 20px;
+}
 .button_wrap {
   display: flex;
 }
@@ -33,6 +39,22 @@ button {
   border-radius: 5px;
   padding: 5px 10px;
 }
-p{
-  padding: 20px;
+#countdown_wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+input {
+  color: #2edf39;
+  background-color: black;
+  border: 2px solid #2edf39;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.wrap {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+#start_countdown {
+  height: 30px;
 }
