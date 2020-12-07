@@ -74,3 +74,6 @@ input {
   color: black;
   text-decoration: none;
 }
+#code {
+  display: flex;
+}

@@ -25,7 +25,7 @@ function sveglia(setOre,setMinuti,setSecondi) {
     var now = new Date();
     var secondi = now.getSeconds();
     var minuti = now.getMinutes();
-    var ore = now.getMonth();
+    var ore = now.getHours();
     var setSecondi;
     var setMinuti;
     var setOre;
