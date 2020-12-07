@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  color: #2edf39;
+}
 #main_wrap {
   display: flex;
   justify-content: center;
@@ -18,5 +21,18 @@
   width: 400px;
   height: 700px;
   text-align: center;
-  background-color: #ececec;
+  background-color: black;
+}
+.button_wrap {
+  display: flex;
+}
+button {
+  color: #2edf39;
+  background-color: black;
+  border: 2px solid #2edf39;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+p{
+  padding: 20px;
 }
