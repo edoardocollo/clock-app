@@ -4,16 +4,22 @@
   box-sizing: border-box;
 }
 body {
+  display: flex;
   color: #2edf39;
+  background-color: black;
+}
+#left_wrap {
+  width: 25%;
+  padding: 10px;
 }
 #main_wrap {
+  width: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+  align-items: flex-start;
 }
 #main_container {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,4 +63,14 @@ input {
 }
 #start_sveglia,#start_countdown {
   height: 30px;
+}
+#home {
+  background-color: #2edf39;
+  padding: 20px;
+  font-size: 20px;
+
+}
+#home a {
+  color: black;
+  text-decoration: none;
 }

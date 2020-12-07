@@ -51,23 +51,6 @@ startSveglia.click(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // CRONOMETRO
 /////////////////////
 var cronometro = $('#cronometro');
